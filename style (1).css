@@ -9,16 +9,21 @@ body.home {
   background-size: cover;
 }
 
+html, body{
+  height:100%;
+}
 
+.navbar-default {
+    background: rgba(255, 255, 255, 1);
+}
+
+.navbar-collapse {
+    border-top: none;
+}
 
 .navbar-default .navbar-nav li{
     font-size: 1.6em;
-    padding-bottom: 1%;
-    padding-top: 2%;
-    padding-left:2%;
-    padding-right:2%;
-    text-align: center;
-    margin-right: 0;
+    background-color: #fff;
 
 }
 
@@ -27,13 +32,10 @@ body.home {
   box-shadow: none;
 }
 
-
-
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus {
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  padding-left: 4%;
-  padding-right: 4%;
+  font-family: 'Montserrat', sans-serif; !important;
+
   color: #333130;
   text-align: center;
 }
@@ -50,17 +52,38 @@ padding-right: 2%; margin-left: 30%; margin-right: 30%;}
 }
 
 .navbar-brand img {
+  position: relative;
   height: 60px;
   width: 90px;
   margin-top:-8px;
   margin-left: 15px;
   padding-bottom: 4px;
+  z-index: 99;
 }
 
 .container-fluid{
   height:65px;
 }
 
+
+footer{
+  text-align: center;
+  color:#333130;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  background-color: #FFF0F2;
+  font-size: 1.25em;
+}
+
+footer a{
+  color:#333130;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color:#8E6D73;
+  font-weight: 400;
+}
 
 
 
@@ -137,6 +160,8 @@ header {
   padding: 3%;
 }
 
+
+
 /*Contact*/
 
 .container {
@@ -161,8 +186,6 @@ header {
 
 
 
-
-
 body.contact {
   margin: 0;
   padding: 0;
@@ -171,4 +194,32 @@ body.contact {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+#footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* Loading styles */
+.preload {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.logo img {
+   height: 250px;
+   left: 50%;
+   margin-top: -125px;
+   margin-left: -125px;
+   position: absolute;
+   top: 50%;
+   width: 250px;
 }
