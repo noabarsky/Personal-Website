@@ -1,3 +1,8 @@
+*:focus{
+  outline:none;
+  border-color: none;
+}
+
 /*Homepage*/
 body.home {
   margin: 0;
