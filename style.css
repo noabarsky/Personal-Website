@@ -180,12 +180,12 @@ header {
   font-size: 1.7em;
 }
 
-.col-md-3 a {
+.col-md-4 a {
   color: #333130;
   text-decoration: none;
 }
 
-.col-md-3 a:hover {
+.col-md-4 a:hover {
   color: #FFC4CE;
 }
 
@@ -205,26 +205,4 @@ body.contact {
   position: absolute;
   bottom: 0;
   width: 100%;
-}
-
-
-/* Loading styles */
-.preload {
-  width: 100%;
-  height: 100%;
-  background: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.logo img {
-   height: 250px;
-   left: 50%;
-   margin-top: -125px;
-   margin-left: -125px;
-   position: absolute;
-   top: 50%;
-   width: 250px;
 }
